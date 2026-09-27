@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multi-Agentic ChatBot</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Multi-Agentic ChatBot</h1>
+        <button id="new-chat" type="button" class="ghost">New chat</button>
+    </header>
+
+    <main id="messages">
+        <div id="empty" class="empty">
+            <h2>How can I help?</h2>
+            <p>Ask anything. You can attach an image or an audio file too.</p>
+        </div>
+    </main>
+
+    <footer>
+        <form id="composer">
+            <div id="chips" class="chips"></div>
+            <div class="bar">
+                <label class="attach" title="Attach image">Image
+                    <input type="file" name="image" accept="image/*,.heic,.heif" hidden>
+                </label>
+                <label class="attach" title="Attach audio">Audio
+                    <input type="file" name="audio" accept="audio/*" hidden>
+                </label>
+                <textarea name="user_request" rows="1" placeholder="Message..." required></textarea>
+                <button id="send" type="submit" class="send" aria-label="Send">&uarr;</button>
+            </div>
+        </form>
+    </footer>
+</body>
+</html>

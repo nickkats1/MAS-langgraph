@@ -1,0 +1,23 @@
+# Environment & secrets
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+venv/
+.venv/
+
+# Coverage
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Editor / tooling
+tempCodeRunnerFile.*
+.DS_Store
+
+.c

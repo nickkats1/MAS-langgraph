@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+
+# Virtualenv — must NOT ship in the image (built for the host, not the container)
+venv/
+.venv/
+
+# Secrets — keys are injected at runtime, never baked into the image
+.env
+
+# Local cruft
+.git/
+.gitignore
+*.md
+tests/
+.DS_Store
